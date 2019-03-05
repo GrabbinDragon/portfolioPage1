@@ -1,1 +1,1 @@
-//BULMA!! - look up the different default bulma stuff. 
+//BULMA!! - look up the different default bulma stuff. download and follow directions**
