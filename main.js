@@ -1,1 +1,4 @@
-//BULMA!! - look up the different default bulma stuff. download and follow directions**
+import { films } from './films'
+
+console.log(films)
+
