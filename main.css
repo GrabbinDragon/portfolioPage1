@@ -35,7 +35,14 @@ nav ul li a:hover {
   background: #e0ebe8;
   min-height: 55vh;
   padding-top: 45vh;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  
+  
+}
+
+.intro {
+  font-size: 1rem; 
 }
 
 .work-header {

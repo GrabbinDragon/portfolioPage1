@@ -1,4 +1,4 @@
-import { films } from '..data/films.js' 
+import { films } from '/swJavascripts/films.js' 
 
 const intro = document.querySelector('.intro')
 
@@ -18,3 +18,4 @@ films.forEach(film => {
   
     intro.appendChild(tile)
   })
+  console.log(films)
