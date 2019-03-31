@@ -37,13 +37,11 @@ nav ul li a:hover {
   padding-top: 45vh;
   display: flex;
   justify-content: space-around;
-  
+  font-size: 1rem; 
   
 }
 
-.intro {
-  font-size: 1rem; 
-}
+
 
 .work-header {
   text-align: center;
