@@ -36,8 +36,10 @@ nav ul li a:hover {
   min-height: 55vh;
   padding-top: 45vh;
   display: flex;
-  justify-content: space-around;
-  font-size: 1rem; 
+
+  flex-flow: column;
+  text-align: center;
+  font-size: 2rem; 
   
 }
 
