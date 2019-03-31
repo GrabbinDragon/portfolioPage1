@@ -61,7 +61,6 @@ export const pokemonData[{
     }, {
         "name": "spearow",
         "url": "https://pokeapi.co/api/v2/pokemon-form/21/"
-
     }, {
         "name": "fearow",
         "url": "https://pokeapi.co/api/v2/pokemon-form/22/"
