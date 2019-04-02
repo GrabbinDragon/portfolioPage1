@@ -4,14 +4,16 @@ import { pokemonData } from '../pokemonCards/pokemonData.js'
 pokemonData.forEach((singlePoke) => {
 fetch(singlePoke.url)
   .then(function(response) {
-    return response.json();
+    return response.json()
   })
   .then(function(myJson) {
-    console.log(myJson);
+    console.log(myJson)
     createPokeCard(myJson)
   })
 })
-  const mainContainer = document.queryselector('container') 
+
+
+  const mainContainer = document.queryselector('.container') 
 
   function createPokeCard(pokeData) {
       let card = document.createElement('div')
