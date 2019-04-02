@@ -1,4 +1,4 @@
-export const pokemonData[{
+export const pokemonData = [{
         "name": "bulbasaur",
         "url": "https://pokeapi.co/api/v2/pokemon/1/"
     }, {
