@@ -57,7 +57,7 @@ export const pokemonData = [{
         "url": "https://pokeapi.co/api/v2/pokemon/19/"
     }, {
         "name": "raticate",
-        "url": "https://pokeapi.co/api/v2/pokemon/20/ 
+        "url": "https://pokeapi.co/api/v2/pokemon/20/" 
     }, {
         "name": "spearow",
         "url": "https://pokeapi.co/api/v2/pokemon-form/21/"

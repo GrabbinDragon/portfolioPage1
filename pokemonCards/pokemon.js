@@ -1,6 +1,7 @@
 import { pokemonData } from '../pokemonCards/pokemonData.js'
  console.log(pokemonData)
-pokemon.forEach((singlePoke) => {
+ 
+pokemonData.forEach((singlePoke) => {
 fetch(singlePoke.url)
   .then(function(response) {
     return response.json();
