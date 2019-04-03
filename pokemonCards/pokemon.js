@@ -23,8 +23,7 @@ function createPokeCard(pokeData) {
   let title = document.createElement('p')
   let upperName = pokeData.name.charAt(0).toUpperCase() + pokeData.name.slice(1)
   title.textContent = upperName
-
-
+  
   card.appendChild(title)
   mainContainer.appendChild(card)
 
