@@ -19,7 +19,6 @@ const mainContainer = document.querySelector('.container')
 
 function createPokeCard(pokeData) {
   let card = document.createElement('div')
-  card.classname = 'box'
   let title = document.createElement('p')
   let upperName = pokeData.name.charAt(0).toUpperCase() + pokeData.name.slice(1)
   title.textContent = upperName
