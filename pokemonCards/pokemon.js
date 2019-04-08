@@ -44,8 +44,9 @@ function fetchSinglePokemon(id) {
   function createPokeCard(pokeData) {
     let card = document.createElement('div')
     let title = document.createElement('p')
-
+    let image = document.createElement("figure")
 
     card.appendChild(title)
+    card.appendChild(image)
     mainContainer.appendChild(card)
   }
