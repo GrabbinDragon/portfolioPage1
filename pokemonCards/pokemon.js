@@ -14,9 +14,9 @@ function cardFront(pokeData) {
   caption.textContent = pokeData.name
   if(pokeData.id !== 0) {
       image.src = `pokemonPics.js/images/${pokeData.imageID}${pokeData.name}.png`
-  } //else {
-     // image.src = `../images/pokeball.png`
-  //}
+  } else {
+      image.src = `pokemonPics.js/images/pokeEgg.png`
+  }
   
   figure.appendChild(image)
   figure.appendChild(caption)
@@ -46,7 +46,7 @@ function cardBack(pokeData) {
   let cardBack = document.createElement('div')
   let backImage = document.createElement('img')
   backImage.className = 'backImage'
-  backImage.src = `../images/pokeball.png`
+  backImage.src = `pokemonPics.js/images/pokeCardBack.png`
   cardBack.className = 'card__face card__face--back'
   cardBack.appendChild(backImage)
   cardBack.appendChild(cardBackInfo(pokeData))
@@ -90,7 +90,7 @@ function matchIdToImage(aPokemon) {
   if(aPokemon.id > 9 && aPokemon.id < 100 ) {
       aPokemon.imageID = "0" + aPokemon.id
   }
-  if(aPokemon.id > 99) {
+  if(aPokemon.id > 99 ) {
       aPokemon.imageID = aPokemon.id
   }
   aPokemon.name = aPokemon.name.charAt(0).toUpperCase() + aPokemon.name.slice(1)
@@ -107,12 +107,12 @@ function fetchSinglePokemon(id) {
   })
 }
 
-class Pokemon {
-  constructor(name) {
-      this.id = 0,
-      this.name = name
-  }
-}
+//class Pokemon {
+ // constructor(name) {
+ //     this.id = 0,
+ //     this.name = name
+ // }
+//}
 
 const newPokemonButton = document.querySelector('button')
 
