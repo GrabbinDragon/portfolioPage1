@@ -53,8 +53,8 @@ main {
     width: 300px;
     height: 80px;
     font-size: 1.5rem;
-    background-color: #a86d4f;
-    color: salmon;
+    background-color: black;
+    color: rgb(9, 230, 200);
   }
   
   img {
