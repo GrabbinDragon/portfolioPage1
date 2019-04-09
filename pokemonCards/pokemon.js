@@ -2,6 +2,8 @@ import {
   pokemon
 } from '../pokemonCards/pokemonData.js'
 
+const mainContainer = document.querySelector('.container')
+
 function cardFront(pokeData) {
   let cardFront = document.createElement('div')
   cardFront.className = 'card__face'
@@ -11,7 +13,7 @@ function cardFront(pokeData) {
 
   caption.textContent = pokeData.name
   if(pokeData.id !== 0) {
-      image.src = `../images/${pokeData.imageID}${pokeData.name}.png`
+      image.src = `pokemonPics.js/images/${pokeData.imageID}${pokeData.name}.png`
   } //else {
      // image.src = `../images/pokeball.png`
   //}
