@@ -13,9 +13,9 @@ function cardFront(pokeData) {
 
   caption.textContent = pokeData.name
   if(pokeData.id !== 0) {
-      image.src = `pokemonPics.js/images/${pokeData.imageID}${pokeData.name}.png`
+      image.src = `pokemonPics/images/${pokeData.imageID}${pokeData.name}.png`
   } else {
-      image.src = `pokemonPics.js/images/pokeEgg.png`
+      image.src = `pokemonPics/images/pokeEgg.png`
   }
   
   figure.appendChild(image)
@@ -46,7 +46,7 @@ function cardBack(pokeData) {
   let cardBack = document.createElement('div')
   let backImage = document.createElement('img')
   backImage.className = 'backImage'
-  backImage.src = `pokemonPics.js/images/pokeCardBack.png`
+  backImage.src = `pokemonPics/images/pokeCardBack.png`
   cardBack.className = 'card__face card__face--back'
   cardBack.appendChild(backImage)
   cardBack.appendChild(cardBackInfo(pokeData))
