@@ -29,16 +29,17 @@ function cardBackInfo(pokeData) {
   infoDiv.className = 'infoDiv'
   let moveOne = document.createElement('p')
   let moveTwo = document.createElement('p')
-  let moveThree = document.createElement('p')
-  let moveFour = document.createElement('p')
+  let HP = document.createElement('p')
+  let ATK = document.createElement('p')
   moveOne.textContent = pokeData.moves[0].move.name
   moveTwo.textContent = pokeData.moves[1].move.name
-  moveThree.textContent = pokeData.moves[2].move.name
-  moveFour.textContent = pokeData.moves[3].move.name
+  HP.textContent = "Base HP = " + pokeData.stats[5].base_stat
+  ATK.textContent = "Base ATK = " + pokeData.stats[4].base_stat
+  infoDiv.appendChild(HP)
+  infoDiv.appendChild(ATK)
   infoDiv.appendChild(moveOne)
   infoDiv.appendChild(moveTwo)
-  infoDiv.appendChild(moveThree)
-  infoDiv.appendChild(moveFour)
+  
   return infoDiv
 }
 

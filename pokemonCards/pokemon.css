@@ -16,7 +16,7 @@ main {
     margin: 4px;
     perspective: 600px;
     border-radius: 10px;
-    box-shadow: 0 0 1em 0.5em rgb(12, 2, 73);
+    box-shadow: 0 0 1em 0.5em rgb(13, 2, 77);
   }
   
   .card {
