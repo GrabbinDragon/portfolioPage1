@@ -31,8 +31,8 @@ function cardBackInfo(pokeData) {
   let moveTwo = document.createElement('p')
   let HP = document.createElement('p')
   let ATK = document.createElement('p')
-  moveOne.textContent = pokeData.moves[0].move.name
-  moveTwo.textContent = pokeData.moves[1].move.name
+  moveOne.textContent = pokeData.moves[1].move.name
+  moveTwo.textContent = pokeData.moves[2].move.name
   HP.textContent = "Base HP = " + pokeData.stats[5].base_stat
   ATK.textContent = "Base ATK = " + pokeData.stats[4].base_stat
   infoDiv.appendChild(HP)
@@ -118,7 +118,7 @@ function fetchSinglePokemon(id) {
 const newPokemonButton = document.querySelector('button')
 
 newPokemonButton.addEventListener('click', function() {
-  createPokeCard(matchIdToImage(new Pokemon('Thoremon')))
+  createPokeCard(matchIdToImage(new Pokemon('Gokumon')))
   // let pokemonID = prompt('Enter an ID of an existing pokemon:')
   // fetchSinglePokemon(pokemonID)
 });
