@@ -14,8 +14,9 @@ function cardFront(pokeData) {
   caption.textContent = pokeData.name
   if(pokeData.id !== 0) {
       image.src = `pokemonPics/images/${pokeData.imageID}${pokeData.name}.png`
-  } else {
-      image.src = `pokemonPics/images/pokeEgg.png`
+  }
+  else {
+    image.src = `pokemonPics/images/pokeEgg.png`
   }
   
   figure.appendChild(image)
@@ -84,6 +85,7 @@ pokemon.forEach(singleMon => {
 function matchIdToImage(aPokemon) {
   if(aPokemon.id === 0) {
       aPokemon.imageID = 0
+      aPokemon.name = "Poke Egg"
   }
   if(aPokemon.id < 10) {
       aPokemon.imageID = "00" + aPokemon.id
@@ -93,6 +95,13 @@ function matchIdToImage(aPokemon) {
   }
   if(aPokemon.id > 99 ) {
       aPokemon.imageID = aPokemon.id
+  }
+  if(aPokemon.name === "mr-mime") {
+    aPokemon.name = "mr. Mime"
+  }
+  let dash = aPokemon.name.indexOf('-')
+  if(dash !== -1) {
+    aPokemon.name = aPokemon.name.slice(0,dash)
   }
   aPokemon.name = aPokemon.name.charAt(0).toUpperCase() + aPokemon.name.slice(1)
   return aPokemon
@@ -108,17 +117,9 @@ function fetchSinglePokemon(id) {
   })
 }
 
-//class Pokemon {
- // constructor(name) {
- //     this.id = 0,
- //     this.name = name
- // }
-//}
+const specificPokemonButton = document.querySelector('#fetchPokemon')
 
-const newPokemonButton = document.querySelector('button')
-
-newPokemonButton.addEventListener('click', function() {
-  createPokeCard(matchIdToImage(new Pokemon('Gokumon')))
-  // let pokemonID = prompt('Enter an ID of an existing pokemon:')
-  // fetchSinglePokemon(pokemonID)
-});
+specificPokemonButton.addEventListener('click', function() {
+  let pokemonID = prompt('Enter an ID of an existing pokemon (1-721):')
+  fetchSinglePokemon(pokemonID)
+})
