@@ -48,7 +48,7 @@ function cardBack(pokeData) {
   let cardBack = document.createElement('div')
   let backImage = document.createElement('img')
   backImage.className = 'backImage'
-  backImage.src = `pokemonPics/images/pokeCardBack.png`
+  backImage.src = `pokemonPics/images/pokeCardBack.jpg`
   cardBack.className = 'card__face card__face--back'
   cardBack.appendChild(backImage)
   cardBack.appendChild(cardBackInfo(pokeData))
