@@ -123,4 +123,4 @@ specificPokemonButton.addEventListener('click', function() {
   let pokemonID = prompt('Enter an ID of an existing pokemon (1-721):')
   fetchSinglePokemon(pokemonID)
 })
-//3 darts is too much!
+//3 darts is too much!!
