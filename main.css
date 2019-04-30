@@ -53,9 +53,7 @@ nav ul li a:hover {
   padding: 20px;
 }
 
-.work {
-  background-color: green;
-}
+
 
 figure{
   text-decoration: none;
@@ -71,13 +69,15 @@ figure{
 
 }
 
-
-
 #figcontainer{
   display: flex;
   justify-content: center;
-  background-color: green;
   padding: 40px;
+}
+
+.work {
+background-color: red;
+background-size: 100%;
 }
 
 .project-pic {
@@ -97,7 +97,7 @@ figure{
 .contact {
   text-align: center;
   background: #C8F7C5;
-  padding-bottom: 160px;
+  
   padding-top: 40px;
 
 }
@@ -121,13 +121,8 @@ figure{
   background: #E4F1FE;
   color: red;
 }
-.contact h1{
-  padding-bottom: 15px;
-}
-.contact p{
-  padding-bottom: 30px;
 
-}
+
 
 @media only screen and (max-width: 500px) {
   nav ul {
@@ -159,7 +154,7 @@ figure{
 }
 
 footer {
-  padding: 40px;
+  padding: 40px 40px 40px 0px;
   background: #22313F;
   color: white;
   line-height: 40px;
